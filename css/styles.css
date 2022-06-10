@@ -78,6 +78,103 @@ body {
 .link {
     text-decoration: none;
 }
+
+/* ШАПКА */
+.header {
+    /* height: 80px; */
+    background: #fff;
+    border-bottom: 1px solid #ECECEC;
+    padding: 24px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav:not(:first-child) {
+    align-content: center;
+}
+
+.header-logo {
+    margin-right: 93px;
+    color: #000;
+}
+
+.logo {
+    font-family: 'Raleway', 'Verdana', sans-serif;
+    font-weight: inherit;
+    width: 145px;
+    /* height: 31px; */
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    display: flex;
+}
+
+.logo-web {
+    color: var(--logo-web-color);
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-item {
+    margin-right: 50px;
+    justify-content: center;
+}
+
+.header-item:last-child {
+    margin-right: 0;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--heading-color);
+}
+
+.header-link.current {
+    color: var(--link-active-color)
+}
+
+.link:hover,
+.link:focus {
+    color: var(--link-active-color);
+}
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-item {
+    margin-left: 50px;
+}
+
+.contacts-item:first-child {
+    margin-left: 0;
+}
+
+.contacts-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
 /* --------СТРАНИЦА СТУДИЯ-------- */
 .main-index {
     background-color: inherit;
