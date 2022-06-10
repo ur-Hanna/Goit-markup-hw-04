@@ -1,0 +1,80 @@
+:root {
+    --heading-color: #212121;
+    --logo-web-color: #2196f3;
+    --link-active-color: #2196f3;
+    --btn-back-clr: #2196f3;
+    --btn-clr: #fff;
+    --footer-back-clr: #2F303A;
+    --subtitle-clr: #757575;
+    --list-heading-clr: #212121;
+    --body-color: #fff;
+}
+
+* {
+    /* outline: 1px dashed rgb(154, 66, 154); */
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Tahoma', 'Verdana', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    background-color: var(--body-color);
+    color: #212121;
+}
+
+/* выравнивание */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    align-content: center;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* скрывалка */
+.hdn {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* апперкейс для спана */
+.upper {
+    text-transform: uppercase;
+}
+
+/* убирает стиль списка */
+.list {
+    list-style: none;
+}
+
+/* убирает декорацию ссылок */
+.link {
+    text-decoration: none;
+}
