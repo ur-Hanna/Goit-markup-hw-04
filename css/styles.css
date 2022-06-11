@@ -241,6 +241,33 @@ body {
     padding-top: 94px;
 }
 
+/* список иконок в преимуществах */
+.benefits-icons-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.benefits-icon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+
+.benefits-icon-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.benefits-icon {
+    display: block;
+}
+
 .benefits-list {
     display: flex;
     align-items: center;
