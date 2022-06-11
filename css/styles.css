@@ -408,7 +408,50 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--subtitle-clr);
-    margin: auto 0;
+    margin: auto 0 16px;
+}
+
+/* список иконок соцсетей команды */
+.team-icons-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 206px;
+    margin: 0 auto;
+}
+
+.team-icon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    /* height: 44px; */
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.team-icon-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-icon-link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    color: #AFB1B8;
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+    background-color: var(--link-active-color);
+    color: #fff;
+    border-radius: 50%;
+}
+
+.team-soc-icon {
+    display: block;
+    fill: currentColor;
 }
 
 /* КЛИЕНТЫ */
