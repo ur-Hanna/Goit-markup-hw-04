@@ -214,7 +214,18 @@ body {
 .hero {
     /* height: 600px; */
     padding: 200px 0;
-    background: #2f303a;
+    background-color: #2f303a;
+}
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-command.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero .container {
