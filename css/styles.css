@@ -79,10 +79,15 @@ body {
     text-decoration: none;
 }
 
+.link:hover,
+.link:focus {
+    color: var(--link-active-color);
+}
+
 /* ШАПКА */
 .header {
     /* height: 80px; */
-    background: #fff;
+    background-color: var(--body-color);
     border-bottom: 1px solid #ECECEC;
     padding: 24px 0;
 }
@@ -149,30 +154,54 @@ body {
     color: var(--link-active-color)
 }
 
-.link:hover,
-.link:focus {
-    color: var(--link-active-color);
-}
-
 .header-contacts {
     display: flex;
     margin-left: auto;
 }
 
 .contacts-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 50px;
 }
 
-.contacts-item:first-child {
+.contacts-item:nth-child(1) {
+    /* background-image: url(../images/envelope.svg);
+    fill: currentColor;
+    background-repeat: no-repeat;
+    background-position: left; */
     margin-left: 0;
 }
 
+/* .contacts-item:nth-child(2) {
+    background-image: url(../images/smartphone.svg);
+    fill: currentColor;
+    background-repeat: no-repeat;
+    background-position: left;
+} */
+
 .contacts-link {
+    display: inline-flex;
+    /* justify-content: center; */
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+}
+
+.contacts-link:hover,
+.contacts-link:focus .contacts-icon {
+    fill: var(--link-active-color);
+}
+
+.contacts-icon {
+    display: inline-flex;
+    fill: currentColor;
+    padding: 0;
+    margin-right: 10px;
 }
 
 /* --------СТРАНИЦА СТУДИЯ-------- */
@@ -255,9 +284,6 @@ body {
      padding: 25px 100px; */
     width: 270px;
     height: 120px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    padding: 25px 100px;
     margin-bottom: 30px;
 }
 
