@@ -287,6 +287,38 @@ body {
     margin-bottom: 30px;
 }
 
+.benefits-icon-item:nth-child(1) {
+    background-color: #F5F4FA;
+    background-image: url(../images/antenna.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.benefits-icon-item:nth-child(2) {
+    background-color: #F5F4FA;
+    background-image: url(../images/clock.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.benefits-icon-item:nth-child(3) {
+    background-color: #F5F4FA;
+    background-image: url(../images/diagram.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.benefits-icon-item:nth-child(4) {
+    background-color: #F5F4FA;
+    background-image: url(../images/astronaut.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
 .benefits-icon-item:not(:last-child) {
     margin-right: 30px;
 }
