@@ -282,60 +282,31 @@ body {
 }
 
 /* список иконок в преимуществах */
-.benefits-icons-list {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.benefits-icon-item {
-    display: flex;
-    /* justify-content: center;
-    align-items: center;
-     padding: 25px 100px; */
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-}
-
-.benefits-icon-item:nth-child(1) {
-    background-color: #F5F4FA;
-    background-image: url(../images/antenna.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 4px;
-}
-
-.benefits-icon-item:nth-child(2) {
-    background-color: #F5F4FA;
-    background-image: url(../images/clock.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 4px;
-}
-
-.benefits-icon-item:nth-child(3) {
-    background-color: #F5F4FA;
-    background-image: url(../images/diagram.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 4px;
-}
-
-.benefits-icon-item:nth-child(4) {
-    background-color: #F5F4FA;
-    background-image: url(../images/astronaut.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 4px;
-}
-
-.benefits-icon-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.benefits-icon {
+.benefits-item::before {
+    content: '';
     display: block;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.benefits-item:nth-child(1)::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.benefits-item:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+}
+
+.benefits-item:nth-child(3)::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.benefits-item:nth-child(4)::before {
+    background-image: url(../images/astronaut.svg);
 }
 
 .benefits-list {
@@ -564,7 +535,7 @@ body {
 }
 
 .clients-link {
-    display: inline-block;
+    display: flex;
     width: 170px;
     height: 92px;
     padding: 16px 32px;
